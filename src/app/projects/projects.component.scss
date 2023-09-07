@@ -1,0 +1,50 @@
+/*Projects section*/
+img {
+    max-width: 100%;
+	vertical-align: middle; 
+	border-style: none;
+}
+
+.theme-color {
+    color: #fc5356;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.dark-color {
+    font-size: 50px; 
+    font-weight: 700; 
+    margin: 0 0 6px;
+    color: #20247b; 
+}
+
+.project {
+    width: 1080px;
+    height: 425px;
+}
+
+.project:hover {
+    transition: transform 1s;
+    transform: scale(1.2) translateY(-18px);
+}
+
+.card-title {
+    color: #20247b;
+}
+
+#html-icon, #css3-icon, #sass-icon, #bootstrap-icon, #javascript-icon, #typescript-icon {
+    height: 35px;
+    width: 32px;
+    margin-left: 2px;
+}
+
+#angular-icon {
+    height: 31px;
+    width: 30px;
+    margin-left: 2px;
+}
+
+#html-icon:hover, #css3-icon:hover, #sass-icon:hover, #bootstrap-icon:hover, #javascript-icon:hover, #typescript-icon:hover, #angular-icon:hover {
+    transition: transform 1s;
+    transform: scale(1.3);
+}

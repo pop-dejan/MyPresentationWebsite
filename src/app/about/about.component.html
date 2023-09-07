@@ -1,0 +1,36 @@
+<!-- ======= About Section ======= -->
+<section class="section about-section" id="about">
+    <div class="container pt-3">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <div class="about-text go-to">
+                    <h3 class="dark-color">{{about_Info.headline}}</h3>
+                    <h6 class="theme-color lead">{{about_Info.subtitle}}</h6>
+                    <p>{{about_Info.about_Text.slice(0,1)}} <mark>{{about_Info.about_Text.slice(1,9)}}</mark>
+                        {{about_Info.about_Text.slice(9,about_Info.about_Text.length)}}
+                    </p>
+                    <div class="row about-list">
+                        <div class="col-md-6">
+                            <div class="media" *ngFor="let media of about_Info.medias">
+                                <label>{{media.type}}</label>
+                                <p>{{media.body}}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media" *ngFor="let media of about_Medias2">
+                                <label>{{media.type}}</label>
+                                <p>{{media.body}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-avatar">
+                    <img src="{{about_Info.image_Info.image_Url}}" title="" alt="{{about_Info.image_Info.image_Alt}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ======= End About Section ======= -->
+

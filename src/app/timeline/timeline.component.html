@@ -1,0 +1,146 @@
+
+<section id="info">
+    <!-- ======= Educetion Subsection ======= -->
+    <div class="container mb-3" id="education">
+        <div class="resume-experience">
+            <div class="about-text go-to mt-3">
+                <h3 class="dark-color">{{education_Info.headline}}</h3>
+                <h6 class="theme-color lead pb-3">{{education_Info.subtitle}}</h6>
+            </div>
+            <div class="timeline-box">
+                <h5 class="resume-experience-title">Education:</h5>
+                <div class="jobster-candidate-timeline">
+                    <div class="jobster-timeline-item">
+                        <div class="jobster-timeline-cricle">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="jobster-timeline-info">
+                            <div class="dashboard-timeline-info">
+                                <span class="jobster-timeline-time">{{education_Info.schools[0].duration}}</span>
+                                <h6 class="mb-2">{{education_Info.schools[0].title}}</h6>
+                                <span>{{education_Info.schools[0].subtitle}}</span>
+                                <p class="mt-2">{{education_Info.schools[0].text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobster-timeline-item mb-0">
+                        <div class="jobster-timeline-cricle">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="jobster-timeline-info">
+                            <div class="dashboard-timeline-info">
+                                <span class="jobster-timeline-time">{{education_Info.schools[1].duration}}</span>
+                                <h6 class="mb-2">{{education_Info.schools[1].title}}</h6>
+                                <span>{{education_Info.schools[1].subtitle}}</span>
+                                <p class="mt-2">{{education_Info.schools[1].text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ======= End Education Subsection ======= -->
+
+            <!-- ======= Certification Subsection ======= -->
+            <div class="timeline-box pt-5" id="certification">
+                <h5 class="resume-experience-title pt-2">Certification:</h5>
+                <div class="jobster-candidate-timeline">
+                    <div class="jobster-timeline-item">
+                        <div class="jobster-timeline-cricle">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="jobster-timeline-info">
+                            <div class="dashboard-timeline-info">
+                                <span class="jobster-timeline-time">{{certifications[0].duration}}</span>
+                                <h6 class="mb-2">{{certifications[0].title}}</h6>
+                                <span>{{certifications[0].subtitle}}</span>
+                                <div class="mt-2">
+                                    {{certifications[0].text[0]}}
+                                    <ul>
+                                        <li>{{certifications[0].text[1]}}</li>
+                                        <li>{{certifications[0].text[2]}}</li>
+                                        <li>{{certifications[0].text[3]}}</li>
+                                        <li>{{certifications[0].text[4]}}</li>
+                                    </ul>       
+                                    {{certifications[0].final_Grade}}
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="{{certifications[0].image_Info.image_Url}}" alt="{{certifications[0].image_Info.image_Alt}}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobster-timeline-item mb-0">
+                        <div class="jobster-timeline-cricle">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="jobster-timeline-info">
+                            <div class="dashboard-timeline-info">
+                                <span class="jobster-timeline-time">{{certifications[1].duration}}</span>
+                                <h6 class="mb-2">{{certifications[1].title}}</h6>
+                                <span>{{certifications[1].subtitle}}</span>
+                                <div class="mt-2">
+                                    {{certifications[1].text[0]}}
+                                    <ol>
+                                        <li>{{certifications[1].text[1]}}</li>
+                                        <li>{{certifications[1].text[2]}}</li>
+                                        <li>{{certifications[1].text[3]}}</li>
+                                    </ol>       
+                                    {{certifications[1].final_Grade}}
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="{{certifications[1].image_Info.image_Url}}" alt="{{certifications[1].image_Info.image_Alt}}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ======= End Certification Subsection ======= -->
+
+            <!-- ======= Work Experience Subsection ======= -->
+            <div class="timeline-box pt-5" id="work">
+                <h5 class="resume-experience-title pt-2">Work Experience:</h5>
+                <div class="jobster-candidate-timeline">
+                    <div class="jobster-timeline-item">
+                        <div class="jobster-timeline-cricle">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="jobster-timeline-info">
+                            <div class="dashboard-timeline-info">
+                                <span class="jobster-timeline-time">{{works[0].duration}}</span>
+                                <h6 class="mb-2">{{works[0].title}}</h6>
+                                <span>{{works[0].subtitle}}</span>
+                                <div class="mt-2">
+                                    <ul>
+                                        <li>{{works[0].text[0]}}</li>
+                                        <li>{{works[0].text[1]}}</li>
+                                        <li>{{works[0].text[2]}}</li>
+                                    </ul>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobster-timeline-item mb-0">
+                        <div class="jobster-timeline-cricle">
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="jobster-timeline-info">
+                            <div class="dashboard-timeline-info">
+                                <span class="jobster-timeline-time">{{works[1].duration}}</span>
+                                <h6 class="mb-2">{{works[1].title}}</h6>
+                                <span>{{works[1].subtitle}}</span>
+                                <div class="mt-2">
+                                    <ul>
+                                        <li>{{works[1].text[0]}}</li>
+                                        <li>{{works[1].text[1]}}</li>
+                                        <li>{{works[1].text[2]}}</li>
+                                    </ul>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- ======= End Work Experience Subsection ======= -->
+</section><!-- ======= End Info Section ======= -->
+
+

@@ -1,0 +1,27 @@
+<!-- ======= Start Projects Section ======= -->
+<section class="container min-vh-100 d-flex align-items-center pt-5" id="projects">
+    <div class="row">
+        <div class="about-text go-to mb-3 mt-5">
+            <h3 class="dark-color">{{projects_Info.headline}}</h3>
+            <h6 class="theme-color lead">{{projects_Info.subtitle}}</h6>
+        </div>  
+        <div class="col-md-4 mb-5" *ngFor="let project of projects_Info.projects">
+            <div class="lc-block">
+                <div class="card shadow-lg px-3 pt-3 bg-white text-dark">
+                    <img class="card-img-top project" src="{{project.image_Info.image_Url}}" alt="{{project.image_Info.image_Alt}}" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title" editable="inline">{{project.headline}}</h3>
+                        <p>{{project.text}}</p>
+                        <h6>Technologies used: 
+                            <a *ngFor="let tech of project.technologies" href="{{tech.img_Href}}" target="_blank" ><img src="{{tech.img_Url}}" id="{{tech._id}}" alt="{{tech.img_Alt}}"></a>
+                        </h6>
+                        <a class="btn btn-dark mt-3" href="{{project.git_Url}}" target="_blank" role="button">View code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- ======= End Projects Section ======= -->
+
+
+
